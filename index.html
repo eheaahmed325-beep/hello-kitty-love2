@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة خاصة لهباوي 💖</title>
+    <style>
+        body {
+            background-color: #ffe6ed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: #d63384;
+            direction: rtl;
+        }
+        .container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
+            max-width: 420px;
+            margin: auto;
+            border: 4px solid #ffb6c1;
+        }
+        img.kitty {
+            width: 160px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        .step {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            font-size: 20px;
+            color: #d63384;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #ffb6c1;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 8px;
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+            transform: scale(1.05);
+        }
+        .heart-btn {
+            font-size: 70px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+            user-select: none;
+            display: inline-block;
+            margin: 15px 0;
+        }
+        .heart-btn:active {
+            transform: scale(1.3);
+        }
+        .final-letter {
+            background: #fff0f5;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px dashed #ff69b4;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #c2185b;
+            text-align: justify;
+            white-space: pre-line;
+            max-height: 350px;
+            overflow-y: auto;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://i.pinimg.com/564x/41/70/72/417072c47eebe2c7323e0cf55d5b78b0.jpg" alt="Hello Kitty" class="kitty">
+
+    <!-- الخطوة 1 -->
+    <div id="step1" class="step active">
+        <h2>هلو هباوي 🐾💖</h2>
+        <button class="btn" onclick="nextStep(2)">هلوات 💕</button>
+    </div>
+
+    <!-- الخطوة 2 -->
+    <div id="step2" class="step">
+        <h2>شونج حبيبتي؟ 🌸</h2>
+        <input type="text" id="answer2" placeholder="اكتبي إجابتج هنا... ✍️">
+        <br>
+        <button class="btn" onclick="nextStep(3)">إرسال 💌</button>
+    </div>
+
+    <!-- الخطوة 3 -->
+    <div id="step3" class="step">
+        <h2>اريد اسئلج سوال بس مستحي منج.. 🙈</h2>
+        <button class="btn" onclick="nextStep(4)">لا عادي احجي ✨</button>
+    </div>
+
+    <!-- الخطوة 4 -->
+    <div id="step4" class="step">
+        <h2>تحبين أمجد؟ 🤔💖</h2>
+        <button class="btn" onclick="nextStep(5)">ها؟ 🫣</button>
+    </div>
+
+    <!-- الخطوة 5 -->
+    <div id="step5" class="step">
+        <h2>شنو ها! تحبين أمجد لولا؟ 😜</h2>
+        <button class="btn" onclick="nextStep(6)">مادري 🙈</button>
+    </div>
+
+    <!-- الخطوة 6 (القلب التفاعلي) -->
+    <div id="step6" class="step">
+        <h2>اذا تحبيني اضغطي على هذا القلب ✨👇</h2>
+        <button class="heart-btn" id="heartBtn" onclick="clickHeart()">💖</button>
+        <p id="heartHint" style="font-size: 14px; color: #ff1493;">اضغطي 3 مرات لفتح الرسالة! (المتبقي: 3)</p>
+    </div>
+
+    <!-- الخطوة الأخيرة (الرسالة الكاملة) -->
+    <div id="step7" class="step">
+        <h2>رسالة من القلب لكِ 💌✨</h2>
+        <div class="final-letter">
+هباوي حبيبتي بنيتي شكد احبجججج والله اموتت بيج والله هباوي بنيتي والله لو الدنيا كلها اصير ضدج اني يمج وماعوفج هباوي انتي انسانه من عالم ثاني والله اموتتت بيج يحبيبتي بنيتي ديري بالج على دراستج وديري بالج على دراستج ونفسج لان اني كلش احبج.
+
+معليج باحد بنيتي الله كريم أنشاء الله حبيبي أنشاء الله نزوج وانسيج كل هاي السنين المحلوه بحياتج وروحي انطيه الج اسئل الله رب العالمين يحفضج الي ويخليج الي ويديمج الي يا احلى انسانه بحياتي ويحفضنه وميفرق بيناتنه اخر رساله اكوله الج اني كلششششش احبجججججججججججج 💖💍🐾
+        </div>
+    </div>
+</div>
+
+<script>
+    let clickCount = 0;
+
+    function nextStep(stepNumber) {
+        document.querySelectorAll('.step').forEach(step => {
+            step.classList.remove('active');
+        });
+        document.getElementById('step' + stepNumber).classList.add('active');
+    }
+
+    function clickHeart() {
+        clickCount++;
+        let remaining = 3 - clickCount;
+        let hint = document.getElementById('heartHint');
+        let heart = document.getElementById('heartBtn');
+
+        if (clickCount === 1) {
+            hint.innerText = "بعد ضغطتين لفتح الرسالة! (المتبقي: 2) 💕";
+            heart.style.transform = "scale(1.2)";
+        } else if (clickCount === 2) {
+            hint.innerText = "بعد ضغطة واحدة فقط! (المتبقي: 1) 🎉";
+            heart.style.transform = "scale(1.4)";
+        } else if (clickCount >= 3) {
+            nextStep(7);
+        }
+    }
+</script>
+
+</body>
+</html>
